@@ -1,6 +1,6 @@
 package com.Labs;
 
-public class program {
+public class lab02 {
     public static void main(String[] args) {
         int number = 5;
         System.out.println("Initial Value: " + number);
