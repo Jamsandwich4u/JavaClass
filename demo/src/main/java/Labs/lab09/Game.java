@@ -7,23 +7,21 @@ import java.util.Timer;
 import javax.swing.*;
 
 public class Game extends Canvas {
-    // create an array of 3 shapes
-    // call this array shapes
-    Shape[] shapes = new Shape[10];
+    ArrayList<Shape> shapes = new ArrayList<>();
 
     Game() {
-        Shape.setWorld(1000, 1000);
+        Shape.setWorld(500, 500);
 
-        shapes[0] = new Shape(50,  50,  20, 20,  6, 4, SHAPE_TYPE.Oval, Color.BLUE);
-        shapes[1] = new Shape(200, 100, 30, 30, -4, 7, SHAPE_TYPE.Arc, Color.RED);
-        shapes[2] = new Shape(400, 300, 40, 40,  8, -5, SHAPE_TYPE.Rectangle, Color.PINK);
-        shapes[3] = new Shape(600, 150, 25, 25, -9, -3, SHAPE_TYPE.RoundRectangle, Color.GRAY);
-        shapes[4] = new Shape(800, 500, 60, 60, 3, 5, SHAPE_TYPE.ThreeDRectangle, Color.CYAN);
-        shapes[5] = new Shape(100, 700, 80, 80, 5, -2, SHAPE_TYPE.Oval, Color.BLUE);
-        shapes[6] = new Shape(500, 800, 35, 35, -7, 9, SHAPE_TYPE.Arc, Color.RED);
-        shapes[7] = new Shape(700, 650, 50, 50, -3, -6, SHAPE_TYPE.Rectangle, Color.PINK);
-        shapes[8] = new Shape(300, 450, 15, 15, 12,  8, SHAPE_TYPE.RoundRectangle, Color.GRAY);
-        shapes[9] = new Shape(900, 900, 100, 100, -2, -3, SHAPE_TYPE.ThreeDRectangle, Color.CYAN); 
+        shapes.add(new Shape(50,  50,  20, 20,  6, 4, SHAPE_TYPE.Oval, Color.BLUE));
+        shapes.add(new Shape(200, 100, 30, 30, -4, 7, SHAPE_TYPE.Arc, Color.RED));
+        shapes.add(new Shape(400, 300, 40, 40,  8, -5, SHAPE_TYPE.Rectangle, Color.PINK));
+        shapes.add(new Shape(600, 150, 25, 25, -9, -3, SHAPE_TYPE.RoundRectangle, Color.GRAY));
+        shapes.add(new Shape(800, 500, 60, 60, 3, 5, SHAPE_TYPE.ThreeDRectangle, Color.CYAN));
+        shapes.add(new Shape(100, 700, 80, 80, 5, -2, SHAPE_TYPE.Oval, Color.BLUE));
+        shapes.add(new Shape(500, 800, 35, 35, -7, 9, SHAPE_TYPE.Arc, Color.RED));
+        shapes.add(new Shape(700, 650, 50, 50, -3, -6, SHAPE_TYPE.Rectangle, Color.PINK));
+        shapes.add(new Shape(300, 450, 15, 15, 12,  8, SHAPE_TYPE.RoundRectangle, Color.GRAY));
+        shapes.add(new Shape(900, 900, 100, 100, -2, -3, SHAPE_TYPE.ThreeDRectangle, Color.CYAN)); 
 
         JFrame frame = new JFrame();
         this.setSize(Shape.worldW, Shape.worldH);

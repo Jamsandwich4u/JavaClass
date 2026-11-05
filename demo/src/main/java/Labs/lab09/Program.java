@@ -2,7 +2,7 @@ package Labs.lab09;
 
 public class Program {
     public static void main(String[] args) {
-        //new Game();
+        new Game();
 
         /*
         String text = "Steven";
@@ -25,6 +25,7 @@ public class Program {
         System.out.println(fullname);
         */
 
+        /*
         StringBuilder sb = new StringBuilder("Bruce Springsteen ");
 
         sb.append("is the artist ever");
@@ -36,6 +37,7 @@ public class Program {
 
         sb.replace(30, 36, "Rockstar");
         System.out.println(sb.toString());
+        */
     }
 }
 
